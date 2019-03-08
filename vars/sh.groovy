@@ -4,7 +4,7 @@ def call(Map params = [:]) {
     Boolean returnStdout = params.get('returnStdout', false)
     String encoding = params.get('encoding', null)
 
-    timeout(time: 2, unit: HOURS) {
+    timeout(time: 2, unit: 'HOURS') {
         ansiColor('xterm') {
             timestamps {
                 /* invoke the built-in sh step */
